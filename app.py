@@ -160,4 +160,4 @@ Quiero que siga esa estructura, tabulado como el ejemplo que te estoy dando.
     titles, ingredients, procedures = readJson()
     return render_template('CuisineCapture.html', titles=titles, ingredients=ingredients, procedures=procedures, zip=zip)
 
-app.run(debug=True)
+#app.run(debug=True)
