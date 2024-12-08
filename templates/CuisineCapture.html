@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cusi Cusa</title>
+
+        <link rel="stylesheet" href="https://unpkg.com/7.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename = 'css/CuisineCapture.css') }}">
+    </head>
+    <body>
+        <div class="window active" >
+            <div class="title-bar">
+              <div class="title-bar-text">De la receta a tu plato</div>
+              <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize"></button>
+                <button aria-label="Close"></button>
+              </div>
+            </div>
+            <div class="window-body has-space">
+                <div class="card-container">
+                    {% for title, ingredient, procedure in zip(titles, ingredients, procedures) %}
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <div class="card-content">
+                                <h2 class="title">{{ title }}</h2>
+                                <p class="details"></p>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <button class="ingredients-btn" onclick="showDetails(this, '{{ ingredient | safe }}')">Ingredientes</button>
+                            <button class="procedure-btn" onclick="showDetails(this, '{{ procedure | safe }}')">Procedimiento</button>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+              <!-- <p>There's so much room for activities!</p> -->
+            </div>
+            <center>
+                <br>
+                <a href="/">
+                    <button>Inicio</button>
+                </a>
+
+                <br><br>
+            </center>
+
+            <div class="espacio1">
+                <div class="card-container">
+                    <p></p>
+                </div>
+            </div>
+
+            <div class="espacio2">
+                <div class="card-container">
+                    <p></p>
+                </div>
+            </div>
+            <div class="espacio3">
+                <div class="card-container">
+                    <p></p>
+                </div>
+            </div>
+
+            <div class="espacio4">
+                <div class="card-container">
+                    <p></p>
+                </div>
+            </div>
+
+            <div class="espacio5">
+                <div class="card-container">
+                    <p></p>
+                </div>
+            </div>
+            <div class="espacio6">
+                <div class="card-container">
+                    <p></p>
+                </div>
+            </div>
+            <div class="espacio7">
+                <div class="card-container">
+                    <p></p>
+                </div>
+            </div>
+            <div class="espacio8">
+                <div class="card-container">
+                    <p></p>
+                </div>
+            </div>
+            <div class="espacio9">
+                <div class="card-container">
+                    <p></p>
+                </div>
+            </div>
+            
+          </div>
+        <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
+        <script src="{{ url_for('static', filename = 'js/scripts.js') }}"></script>
+    </body>
+</html>

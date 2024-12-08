@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cusi Cusa</title>
+    <link rel="stylesheet" href="https://unpkg.com/7.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/indexStyles.css') }}">
+</head>
+<body>
+    <div class="background">
+        <div class="window glass active" style="max-width: 100%">
+          <div class="title-bar">
+            <div class="title-bar-text">Asistente culinario Cusi Cusa</div>
+            <div class="title-bar-controls">
+              <button aria-label="Minimize"></button>
+              <button aria-label="Close"></button>
+            </div>
+          </div>
+          <div class="window-body has-space">
+            <br><br><br>
+            <form action="{{ url_for('CuisineCapture') }}" method="POST" enctype="multipart/form-data">
+                <div class="form">
+                    <input onchange="readURL(this);" type="file" name="inputImg">
+                    <!-- <input type="submit" value="Submit"> -->
+                    <button type="submit">Enviar</button>
+                </div><br><br>
+                <div class="img">
+                    <img id="blah" src="#" alt="input image" />
+                </div>
+                <br><br><br>
+            </form>
+          </div>
+        </div>
+      </div>
+      <br><br><br>
+      <div role="tooltip">Asistente culinario Cusi Cusa: Transformando las imagenes en deliciosas ideas de recetas en un solo paso.</div>
+      <br>
+    <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
+    <script src="{{ url_for('static', filename = 'js/scripts.js') }}"></script>
+</body>
+</html>

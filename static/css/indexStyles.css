@@ -1,0 +1,35 @@
+.form{
+    justify-content: center;
+    display: flex;
+}
+
+.form input[type="file"]{
+    
+    border: 1px solid;
+    border-right: 0;
+    padding: 10px;
+    border-radius: 4px;
+    border-top-right-radius: 0%;
+    border-bottom-right-radius: 0%;
+    font: 9pt Segoe UI,SegoeUI,Noto Sans,sans-serif;
+}
+
+.breadcrumbs{
+    
+    width: 100%;
+    content: '.';
+    height: 20ox;
+    display: block;
+}
+
+#blah{
+    visibility: hidden;
+    width: 300px;
+    height: 250px;
+}
+
+.img{
+    background: url(../img/image.jpg);
+    justify-content: center;
+    display: flex;
+}

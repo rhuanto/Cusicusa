@@ -1,0 +1,123 @@
+*{
+    font:  9pt Segoe UI,SegoeUI,Noto Sans,sans-serif;
+}
+
+/* Container for all card wrappers */
+.card-container {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* Style for each card wrapper */
+.card-wrapper {
+    width: calc(33.333% - 20px); /* Adjust the width for 3 cards in a row, considering the margin */
+    margin: 10px; /* Space around each card and button group */
+}
+
+/* Style for each card */
+.card {
+    
+    border: 1px solid;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 10px; /* Space between the card and its buttons */
+}
+
+/* Style for the card content */
+.card-content {
+    padding: 20px;
+}
+
+/* Style for the title */
+.title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Style for the buttons container */
+.buttons {
+    display: none; /* Initially hide the buttons */
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease; /* Smooth transition for opacity changes */
+}
+
+/* Style for individual buttons */
+.buttons button {
+    margin: 0 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Hover effect on the card to show the buttons */
+.card-wrapper:hover .buttons {
+    display: flex; /* Show buttons when the respective card is hovered */
+    opacity: 1; /* Make buttons fully visible */
+}
+
+/* Style for the details paragraph */
+.details {
+    display: none;
+}
+
+/* Style to make details visible */
+.show {
+    display: block;
+}
+
+.espacio1{
+    background: url(../img/image1.jpg);
+    padding: 15px;
+    
+}
+
+.espacio2{
+    background: url(../img/image1.jpg);
+    padding: 15px;
+    
+}
+
+.espacio3{
+    background: url(../img/image1.jpg);
+    padding: 15px;
+    
+}
+
+.espacio4{
+    background: url(../img/image1.jpg);
+    padding: 15px;
+    
+}
+
+.espacio5{
+    background: url(../img/image1.jpg);
+    padding: 15px;
+    
+}
+
+
+.espacio6{
+    background: url(../img/image1.jpg);
+    padding: 15px;
+    
+}
+
+.espacio7{
+    background: url(../img/image1.jpg);
+    padding: 15px;
+    
+}
+
+.espacio8{
+    background: url(../img/image1.jpg);
+    padding: 15px;
+    
+}
+
+.espacio9{
+    background: url(../img/image1.jpg);
+    padding: 15px;
+    
+}
