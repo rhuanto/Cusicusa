@@ -3,5 +3,5 @@ Pillow==10.1.0
 Pillow==10.1.0
 protobuf==4.25.1
 python-dotenv==1.0.0
-Gunicorn
+gunicorn ==gunicorn-23.0.0
 google-generativeai
