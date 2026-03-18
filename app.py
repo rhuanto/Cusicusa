@@ -45,7 +45,7 @@ def CuisineCapture():
         file.save('static/incoming/image.jpg')
         #GOOGLE_API_KEY = os.environ.get('GOOGLE_API_KEY')
         # genai.configure(api_key=GOOGLE_API_KEY)
-        genai.configure(api_key='AIzaSyDvnxZy1Azm7utP2DoCR8BasNXd6jiFjJU')
+        genai.configure(api_key='')
 
         model = genai.GenerativeModel('gemini-1.5-flash')
 
